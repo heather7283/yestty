@@ -26,6 +26,7 @@ int main(int argc, char **argv) {
         new_ld_preload = malloc(strlen("libyestty.so:") + strlen(ld_preload) + 1);
         if (new_ld_preload == NULL) {
             fprintf(stderr, "yestty: memory allocation failed: %s", strerror(errno));
+            return 1;
         }
         stpcpy(stpcpy(new_ld_preload, "libyestty.so:"), ld_preload);
     }
