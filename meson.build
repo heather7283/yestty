@@ -6,4 +6,5 @@ project('yestty', 'c',
 yestty_lib = shared_library('libyestty', 'src/libyestty.c', name_prefix: '', install: true)
 
 yestty_exe = executable('yestty', 'src/yestty.c', install: true)
+notty_exe = executable('notty', 'src/notty.c', install: true)
 

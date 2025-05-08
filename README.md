@@ -18,5 +18,7 @@ sudo ldconfig
 ```sh
 yestty dmesg | less
 # enjoy colors
+notty dmesg
+# enjoy no colors
 ```
 
