@@ -21,7 +21,7 @@ int isatty(int fd) {
     }
 
     /* that's what musl does in its isatty() impl */
-	struct winsize wsz;
+    struct winsize wsz;
     int ret = ioctl(fd, TIOCGWINSZ, &wsz);
 
     if (ret == -1 && errno != ENOTTY) {
