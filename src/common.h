@@ -1,0 +1,9 @@
+#ifndef YESTTY_SRC_COMMON_H
+#define YESTTY_SRC_COMMON_H
+
+#define YESTTY_MODE_ENVVAR "YESTTY_MODE"
+#define YESTTY_MODE_ENVVAR_YES "yes"
+#define YESTTY_MODE_ENVVAR_NO  "no"
+
+#endif /* #ifndef YESTTY_SRC_COMMON_H */
+
