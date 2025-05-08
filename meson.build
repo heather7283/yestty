@@ -3,6 +3,8 @@ project('yestty', 'c',
         license: 'MIT',
         default_options: ['warning_level=3'])
 
+subdir('completions')
+
 yestty_lib = shared_library('libyestty', 'src/libyestty.c', name_prefix: '', install: true)
 
 yestty_exe = executable('yestty', 'src/yestty.c', install: true)
