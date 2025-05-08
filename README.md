@@ -16,7 +16,7 @@ sudo ldconfig
 
 ## Usage
 ```sh
-yestty git diff | less
+yestty dmesg | less
 # enjoy colors
 ```
 
