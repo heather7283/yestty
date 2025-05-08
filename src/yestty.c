@@ -29,6 +29,11 @@ int main(int argc, char **argv) {
         }
         stpcpy(stpcpy(new_ld_preload, "libyestty.so:"), ld_preload);
     }
+    if (setenv("LD_PRELOAD", new_ld_preload, 1) < 0) {
+        fprintf(stderr, "yestty: failed to set LD_PRELOAD envvar to %s: %s",
+                new_ld_preload, strerror(errno));
+        return 1;
+    };
 
     argv = &argv[1];
     execvp(argv[0], argv);
